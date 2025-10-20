@@ -1,14 +1,9 @@
 import Link from "next/link";
+import type { Route } from "next";
 import { siteConfig } from "@/config/site";
 import ThemeToggle from "./ThemeToggle";
 
-const NavLink = ({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) => (
+const NavLink = ({ href, children }: { href: Route; children: React.ReactNode }) => (
   <Link
     className="px-3 py-2 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-900"
     href={href}
