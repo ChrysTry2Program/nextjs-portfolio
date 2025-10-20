@@ -18,9 +18,9 @@ export default function ProjectCard({ project }: { project: Project }) {
           <p className="muted mt-1">{project.description}</p>
         </div>
         {project.href && (
-          <Link className="btn" href={project.href} target="_blank">
+          <a className="btn" href={project.href} target="_blank">
             Open
-          </Link>
+          </a>
         )}
       </div>
       <div className="mt-4 flex flex-wrap gap-2">
