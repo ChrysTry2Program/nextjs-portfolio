@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  @apply bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100;
+}
+
+.container {
+  @apply mx-auto max-w-5xl px-4;
+}
+.btn {
+  @apply inline-flex items-center gap-2 rounded-xl border border-zinc-300 dark:border-zinc-800 px-4 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition;
+}
+.card {
+  @apply rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 shadow-sm;
+}
+.section-title {
+  @apply text-2xl md:text-3xl font-semibold tracking-tight;
+}
+.muted {
+  @apply text-zinc-600 dark:text-zinc-400;
+}
+@media print {
+  header,
+  footer {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+  .card {
+    box-shadow: none !important;
+    border-color: #ddd;
+  }
+  .btn {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
+/* Center images and justify text in blog posts */
+.blog-content .prose {
+  @apply text-justify; /* justify all paragraphs */
+}
+
+.blog-content .prose img {
+  @apply mx-auto rounded-xl; /* center images and round corners */
+}
+
+/* Optional: limit max width of images so they don’t stretch too wide */
+.blog-content .prose img {
+  max-width: 80%;
+}
+
+/* Optional: center captions if you add them later */
+.blog-content .prose figure {
+  @apply text-center;
+}
