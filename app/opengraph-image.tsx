@@ -4,7 +4,7 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Ryan — Portfolio";
+export const alt = "Chrysander — Portfolio";
 
 export default function OG() {
   return new ImageResponse(
@@ -21,9 +21,10 @@ export default function OG() {
           justifyContent: "center",
         }}
       >
-        Ryan — Portfolio
+        Chrys — Portfolio
       </div>
     ),
     size
   );
 }
+
