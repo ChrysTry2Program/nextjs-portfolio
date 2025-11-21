@@ -2,10 +2,6 @@ import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import ProjectCard, { Project } from "@/components/ProjectCard";
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 4d5e91e (Initial commit)
 export default function Page() {
   const featured: Project[] = [
     {
