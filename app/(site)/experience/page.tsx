@@ -1,14 +1,11 @@
 import Section from "@/components/Section";
 import Timeline, { TimelineItem } from "@/components/Timeline";
 
-<<<<<<< HEAD
-=======
 export const metadata = {
   title: "Experience",
   description: "Timeline of Chrysander",
 };
 
->>>>>>> 4d5e91e (Initial commit)
 const items: TimelineItem[] = [
   {
     title: "Engineering Intern (Project Delivery)",

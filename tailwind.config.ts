@@ -14,11 +14,7 @@ const config: Config = {
       },
     },
   },
-<<<<<<< HEAD
-  plugins: [typography], // 👈 add this
-=======
   plugins: [typography], 
->>>>>>> 4d5e91e (Initial commit)
 };
 
 export default config;
