@@ -14,16 +14,11 @@ export type PostMeta = {
   date: string;
   image: string;
   excerpt?: string;
-<<<<<<< HEAD
-};
-
-=======
   tags?: string[];
 };
 
 /*----------------------------------------------------------------------------*/
 // Post directory
->>>>>>> 4d5e91e (Initial commit)
 const contentDir = path.join(process.cwd(), "content", "blog");
 
 export async function getAllPostsMeta(): Promise<PostMeta[]> {
@@ -72,8 +67,6 @@ export async function getPostBySlug(slug: string) {
 
   return { content, meta: { slug, ...frontmatter } as PostMeta };
 }
-<<<<<<< HEAD
-=======
 
 /*----------------------------------------------------------------------------*/
 // Project directory
@@ -125,4 +118,3 @@ export async function getProjectBySlug(slug: string) {
   return { content, meta: { slug, ...frontmatter } as PostMeta };
 }
 
->>>>>>> 4d5e91e (Initial commit)
