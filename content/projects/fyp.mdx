@@ -1,0 +1,124 @@
+---
+title: "Autonomous Medicine Dispensing Robot"
+date: "2025-06-06"
+image: "/projects/fyprobot.jpg"
+excerpt: "An autonomous medicine dispensing robot that receives patient and dosage data via a web-based interface, securely stores solid tablets or capsules, and accurately dispenses them in a controlled hospital ward setting to improve efficiency and reduce nursing workload."
+---
+
+---
+
+**Project Keyword**:
+
+Autonomous Medicine Dispensing Robot
+
+---
+
+**Project Summary**
+
+<Image src="/projects/fyprobot.jpg" alt="Side Quest" width={500} height={550} />
+
+This project focuses on developing a compact, autonomous medicine dispensing robot designed to support hospital wards facing workforce shortages—especially among nurses. Unlike large, stationary dispensing systems used in pharmacies, this robot is engineered to operate efficiently in tight ward environments, handling solid medications such as tablets, capsules, and pills.
+
+**The system features:**
+
+-Modular feeder-containers for different pill types
+
+-Adjustable crank-slider actuators for accurate pill release
+
+-A validation mechanism (IR sensor + trap gate) to ensure correct dosage
+
+-A web-based user interface for patient management, medicine logging, and dispensing schedules
+
+-ESP32 communication with a local MySQL database
+
+-Real-time clock synchronization for time-based automated dispensing
+
+---
+
+Testing showed that despite mechanical limitations (wear and temporary feeder design), the concept proved feasible, with Actuator 3 achieving 88.89% accuracy and the validation mechanism averaging 88% accuracy. The software architecture performed reliably and enabled fully autonomous dispensing based on scheduled times.
+
+This first prototype demonstrates the potential of safe, automated medicine delivery in hospital wards and lays the foundation for future improvements in precision, durability, and scalability.
+
+---
+
+**Things Learned from the Project**
+
+1. Robotics System Integration
+
+-How mechanical, electrical, and software systems interact in a real-world robot.
+
+-Importance of aligning mechanical tolerances (e.g., feeder slopes, gate integrity).
+
+2. Hardware Reliability & Limitations
+
+-Wear-and-tear effects become significant in precision mechanisms.
+
+-Sensor behaviour varies with material and colour (e.g., black 3D-printed tablets).
+
+3. Autonomous System Logic
+
+-Using non-blocking code (millis()) to achieve real-time responsiveness.
+
+-Designing sequential actuator states and validation logic.
+
+4. Real-Time Communication
+
+-Synchronising robot behaviour with a database through ESP32.
+
+-Handling complete JSON packets safely to avoid corrupted data.
+
+5. UI/UX for Healthcare Automation
+
+-Building a simple, functional GUI that healthcare staff can use without technical training.
+
+-Designing workflows for medicine management, patient registry, and dispensing schedules.
+
+6. Systems-Level Thinking
+
+-Understanding the limitations of large-scale pharmaceutical systems
+
+-Identifying gaps where small, mobile robots can provide value.
+
+---
+
+**Skills Obtained**
+
+Technical Skills
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Robotics Hardware Design (actuators, feeders, IR validation traps)
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Microcontroller Programming (Arduino Mega, ESP32)
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Embedded Systems Development
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Servo motor control and motion sequencing
+
+&nbsp;&nbsp;&nbsp;&nbsp;-JSON parsing & data structuring
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Real-Time Clock integration
+
+Software & Backend Skills
+
+&nbsp;&nbsp;&nbsp;&nbsp;-C++ for embedded robotics
+
+&nbsp;&nbsp;&nbsp;&nbsp;-HTML, CSS, PHP for web development
+
+&nbsp;&nbsp;&nbsp;&nbsp;-MySQL database design & integration
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Local server hosting and API handling
+
+System Engineering Skills
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Creating autonomous workflows
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Designing failure-safe validation mechanisms
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Debugging real-world mechanical + software interactions
+
+Soft Skills
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Problem-solving under hardware constraints
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Project time management
+
+&nbsp;&nbsp;&nbsp;&nbsp;-Technical documentation & research analysis

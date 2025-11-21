@@ -1,6 +1,14 @@
 import Section from "@/components/Section";
 import { siteConfig } from "@/config/site";
 
+<<<<<<< HEAD
+=======
+export const metadata = {
+  title: "Contact",
+  description: "Chrysander's Website Contact Page",
+};
+
+>>>>>>> 4d5e91e (Initial commit)
 export default function ContactPage() {
   return (
     <div className="space-y-10">
